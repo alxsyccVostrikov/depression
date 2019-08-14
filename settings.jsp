@@ -1,4 +1,14 @@
 <%!
+//============================================================usuario.jsp
+String[][] attr_usuario={
+    {"Nome Completo","text"},
+    {"Email","text"},
+    {"Senha","password"},
+    {"data","date"}
+};
+    
+//=============================================================index.jsp
+String lang="pt-br";
 String systemName="Depression";
 String[][] btn={
     {"Entrar","login.jsp"},
@@ -9,10 +19,6 @@ String[][] btn={
 String[][] infoContato={
     {"Ceo","Alxsy Mostovik"},
     {"email","vostrikovalxsycc@gmail.com"},
-};
-
-String[] attr_usuario={
-    "nome"
 };
 
 
@@ -31,5 +37,7 @@ String tab="<br>";
     return tab;
 }
 
-
+String simplePage(String pag){
+    return pag.replace("/","");
+}
 %>

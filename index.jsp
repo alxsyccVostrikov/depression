@@ -2,7 +2,7 @@
 <%@page import="example.*" %> 
 <%@include file="settings.jsp"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%=lang%>">
 <head>
 	<meta charset="UTF-8">
 <title><%=systemName%></title>
@@ -14,7 +14,7 @@
     <form align="right">
         <%
             for(byte i=0;i<btn.length;i++)
-                    out.println("<input type='submit' value="+btn[i][0]+" onclick=javascript:window.location.href='"+btn[i][1]+"'></input>"); 
+                    out.println("<input type='submit' value="+btn[i][0]+" onclick=javascript:window.open('"+btn[i][1]+"','_blank')></input>"); 
         %>
     </form>
     
@@ -29,7 +29,7 @@
                 out.println(breakLine(3));
             %>
         <p>
-            Compartilhe sua história com pessoas e amigos que desejam ajudar!
+            Compartilhe sua histรณria com pessoas e amigos que desejam ajudar!
         </p>
     </div>
     

@@ -1,3 +1,6 @@
+:root{
+    --pretoDepression:rgba(0,0,0, 0.5);   
+}
 body{
-    background: rgba(0,0,0, 0.5);
+    background:var(--pretoDepression);
 }
