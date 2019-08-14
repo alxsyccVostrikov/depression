@@ -1,10 +1,11 @@
+<%@ page contentType = "text/html;charset=utf-8"%>
 <%!
 //============================================================usuario.jsp
 String[][] attr_usuario={
     {"Nome Completo","text"},
     {"Email","text"},
     {"Senha","password"},
-    {"data","date"}
+//    {"data","date"}
 };
     
 //=============================================================index.jsp
@@ -40,4 +41,8 @@ String tab="<br>";
 String simplePage(String pag){
     return pag.replace("/","");
 }
+
+String alert(){
+    return "<h1 align=center>Ainda não implementado,entrar em contato "+infoContato[1][1]+"</h1>";
+    }
 %>

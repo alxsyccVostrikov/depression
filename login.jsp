@@ -23,18 +23,24 @@
   </div>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
+    <!--label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
+    <input type="password" placeholder="Enter Password" name="psw" required-->
+        <%
+          for(byte i=0;i<attr_usuario.length;i++)
+              if(attr_usuario[i][0]=="Email" || attr_usuario[i][0]=="Senha"){
+            out.println("<label for="+attr_usuario[i][0]+"><b>"+attr_usuario[i][0]+"</b></label>"+
+                        "<input type="+attr_usuario[i][1]+" placeholder="+attr_usuario[i][0]+" name="+attr_usuario[i][0]+" required>");
+        }
+      %>
+    <button type="submit">Acessar</button>
+    <!--label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    </label-->
   </div>
-    <span class="psw">Esqueceu Password<a href="#">password?</a></span>
+    <span class="psw">Esqueceu a senha?<a href="forgetPass.jsp">click aqui</a></span>
 </form>
 
 </body>
