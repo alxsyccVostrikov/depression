@@ -1,5 +1,6 @@
 <%@page contentType = "text/html;charset=utf-8" %>
 <%@page import="example.*" %> 
+<%@page import="function.*" %> 
 <%@include file="settings.jsp"%>
 <!DOCTYPE html>
 <html lang="<%=lang%>">
@@ -23,6 +24,8 @@
             <%
                 out.println(breakLine(2));
                 out.println(systemName);
+            //password pass_ob=new password();
+            //out.println(pass_ob.generingMD5("alx"));
             %>
         </h1>
             <%
