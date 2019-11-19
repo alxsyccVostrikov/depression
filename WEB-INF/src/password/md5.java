@@ -14,7 +14,7 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 public class md5 extends password{
     
-    public static String generingMD5(String input) 
+    public static String genering(String input) 
     { 
         try { 
   

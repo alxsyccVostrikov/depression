@@ -32,7 +32,7 @@ public class aes extends password{
         }
     }
  
-    public static String generingAES(String strToEncrypt, String secret) 
+    public static String genering(String strToEncrypt, String secret) 
     {
         try
         {

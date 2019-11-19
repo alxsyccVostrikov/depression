@@ -23,7 +23,7 @@
         <h1>
             <%
                 out.println(breakLine(2));
-                out.println(systemName);
+                out.println("<h1>"+systemName+"</h1>");
             //password pass_ob=new password();
             //out.println(pass_ob.generingMD5("alx"));
             %>
@@ -32,7 +32,7 @@
                 out.println(breakLine(3));
             %>
         <p>
-            Compartilhe sua histรณria com pessoas e amigos que desejam ajudar!
+            <%="<h3>Compartilhe sua história com pessoas e amigos que desejam ajudar!</h3>"%>
         </p>
     </div>
     
